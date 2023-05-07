@@ -2516,3 +2516,14 @@ section {
 #cb-cookie-banner .btn:hover {
   background-color: #ccc;
 }
+
+/**
+* Store
+*/
+.store-card {
+  background-color: #cccccc; /* Used if the image is unavailable */
+  min-height: 200px; 
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
