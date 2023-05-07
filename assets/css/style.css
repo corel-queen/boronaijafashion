@@ -2497,11 +2497,22 @@ section {
 
 #cb-cookie-banner a {
   color: var(--bg-color);
+  font-weight: bold;
+}
+
+#cb-cookie-banner a:hover {
+  color: #ccc;
 }
 
 #cb-cookie-banner .btn {
+  font-size: 16px;
+  font-weight: 700;
   padding: 10px 20px;
   color: var(--sec-color);
   background-color: var(--bg-color);
   border: none;
+}
+
+#cb-cookie-banner .btn:hover {
+  background-color: #ccc;
 }
