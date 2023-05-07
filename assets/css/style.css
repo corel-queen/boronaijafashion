@@ -1651,8 +1651,10 @@ section {
 
 .blog .entry {
   padding: 30px;
-  margin-bottom: 60px;
+  margin: 0 5px 60px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto;
+  width: 48%;
 }
 
 .blog .entry .entry-img {
