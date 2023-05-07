@@ -530,7 +530,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #0f394c;
+  color: var(--sec-color);
 }
 
 .section-title p {
@@ -1236,6 +1236,17 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
+.gallery {
+  margin-top: 90px;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    margin-top: 70px;
+  }
+}
+
 .gallery .gallery-item {
   overflow: hidden;
   border-right: 3px solid #fff;
@@ -1256,6 +1267,15 @@ section {
 .contact {
   background: #fff;
   margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 70px;
+  }
+  .reset-margin {
+    margin-top: 1rem!important;
+  }
 }
 
 .contact .info {
