@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 :root {
   --pry-color: #49b5e7;
-  --sec-color: #062e25;
+  --sec-color: #082e06;
   --tet-color: #062e25;
   --alt-color: #009900;
   --bg-color: #f9f9f9;
@@ -1237,14 +1237,7 @@ section {
 # Gallery
 --------------------------------------------------------------*/
 .gallery {
-  margin-top: 90px;
   background: #fff;
-}
-
-@media (max-width: 768px) {
-  .gallery {
-    margin-top: 70px;
-  }
 }
 
 .gallery .gallery-item {
@@ -1266,13 +1259,9 @@ section {
 --------------------------------------------------------------*/
 .contact {
   background: #fff;
-  margin-top: 90px;
 }
 
 @media (max-width: 768px) {
-  .contact {
-    margin-top: 70px;
-  }
   .reset-margin {
     margin-top: 1rem!important;
   }
@@ -1418,7 +1407,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f0f9fd;
+  background: var(--light-bg-color);
   margin-top: 84px;
 }
 
@@ -1429,9 +1418,16 @@ section {
 }
 
 .breadcrumbs h2 {
+  padding: 20px;
   font-size: 28px;
-  font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-family: Dosis, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs h2 {
+    padding: 12px;
+  }
 }
 
 .breadcrumbs ol {
@@ -1673,17 +1669,17 @@ section {
 }
 
 .blog .entry .entry-title a {
-  color: #012970;
+  color: var(--sec-color);
   transition: 0.3s;
 }
 
 .blog .entry .entry-title a:hover {
-  color: #4154f1;
+  color: var(--alt-color);
 }
 
 .blog .entry .entry-meta {
   margin-bottom: 15px;
-  color: #4084fd;
+  color: var(--alt-color);
 }
 
 .blog .entry .entry-meta ul {
@@ -1723,7 +1719,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #4154f1;
+  background: var(--alt-color);
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -1732,7 +1728,7 @@ section {
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #5969f3;
+  background: var(--sec-color);
 }
 
 .blog .entry .entry-content h3 {
@@ -1766,7 +1762,7 @@ section {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #012970;
+  background-color: var(--sec-color);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1777,17 +1773,17 @@ section {
 }
 
 .blog .entry .entry-footer i {
-  color: #0d64fd;
+  color: var(--alt-color);
   display: inline;
 }
 
 .blog .entry .entry-footer a {
-  color: #013289;
+  color: var(--alt-color);
   transition: 0.3s;
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #4154f1;
+  color: var(--sec-color);
 }
 
 .blog .entry .entry-footer .cats {
@@ -1846,7 +1842,7 @@ section {
   font-size: 22px;
   margin-bottom: 0px;
   padding: 0;
-  color: #012970;
+  color: var(--sec-color);
 }
 
 .blog .blog-author .social-links {
@@ -1854,7 +1850,7 @@ section {
 }
 
 .blog .blog-author .social-links a {
-  color: rgba(1, 41, 112, 0.5);
+  color: rgba(1, 112, 55, 0.5);
   margin-right: 5px;
 }
 
@@ -1896,12 +1892,12 @@ section {
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #4154f1;
+  color: var(--alt-color);
 }
 
 .blog .blog-comments .comment h5 .reply {
   padding-left: 10px;
-  color: #012970;
+  color: var(--sec-color);
 }
 
 .blog .blog-comments .comment h5 .reply i {
@@ -1911,7 +1907,7 @@ section {
 .blog .blog-comments .comment time {
   display: block;
   font-size: 14px;
-  color: #013ca3;
+  color: var(--alt-color);
   margin-bottom: 5px;
 }
 
@@ -1942,7 +1938,7 @@ section {
 
 .blog .blog-comments .reply-form input:focus {
   box-shadow: none;
-  border-color: #a0aaf8;
+  border-color: var(--alt-color);
 }
 
 .blog .blog-comments .reply-form textarea {
@@ -1953,7 +1949,7 @@ section {
 
 .blog .blog-comments .reply-form textarea:focus {
   box-shadow: none;
-  border-color: #a0aaf8;
+  border-color: var(--alt-color);
 }
 
 .blog .blog-comments .reply-form .form-group {
@@ -1964,15 +1960,15 @@ section {
   border-radius: 4px;
   padding: 10px 20px;
   border: 0;
-  background-color: #012970;
+  background-color: var(--alt-color);
 }
 
 .blog .blog-comments .reply-form .btn-primary:hover {
-  background-color: #013289;
+  background-color: var(--sec-color);
 }
 
 .blog .blog-pagination {
-  color: #024ed5;
+  color: var(--alt-color);
 }
 
 .blog .blog-pagination ul {
@@ -1988,7 +1984,7 @@ section {
 }
 
 .blog .blog-pagination li a {
-  color: #012970;
+  color: var(--alt-color);
   padding: 7px 16px;
   display: flex;
   align-items: center;
@@ -1997,7 +1993,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #4154f1;
+  background: var(--sec-color);
 }
 
 .blog .blog-pagination li.active a,
@@ -2016,7 +2012,7 @@ section {
   font-weight: 700;
   padding: 0 0 0 0;
   margin: 0 0 15px 0;
-  color: #012970;
+  color: var(--sec-color);
   position: relative;
 }
 
@@ -2048,7 +2044,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #4154f1;
+  background: var(--alt-color);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2060,7 +2056,7 @@ section {
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: #5465f2;
+  background: var(--sec-color);
 }
 
 .blog .sidebar .categories ul {
@@ -2073,12 +2069,12 @@ section {
 }
 
 .blog .sidebar .categories ul a {
-  color: #012970;
+  color: var(--sec-color);
   transition: 0.3s;
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #4154f1;
+  color: var(--alt-color);
 }
 
 .blog .sidebar .categories ul a span {
@@ -2103,12 +2099,12 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a {
-  color: #012970;
+  color: var(--sec-color);
   transition: 0.3s;
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #4154f1;
+  color: var(--alt-color);
 }
 
 .blog .sidebar .recent-posts time {
@@ -2133,24 +2129,24 @@ section {
 }
 
 .blog .sidebar .tags ul a {
-  color: #0257ee;
+  color: var(--alt-color);
   font-size: 14px;
   padding: 6px 14px;
   margin: 0 6px 8px 0;
-  border: 1px solid #d7e6ff;
+  border: 1px solid #aed0bb;
   display: inline-block;
   transition: 0.3s;
 }
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  border: 1px solid #4154f1;
-  background: #4154f1;
+  border: 1px solid var(--alt-color);
+  background: var(--alt-color);
 }
 
 .blog .sidebar .tags ul a span {
   padding-left: 5px;
-  color: #a5c5fe;
+  color: var(--alt-color);
   font-size: 14px;
 }
 
