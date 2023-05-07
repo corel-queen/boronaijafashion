@@ -1653,6 +1653,9 @@ section {
   padding: 30px;
   margin: 0 5px 60px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.blog .entry.entry-flex {
   flex: 0 0 auto;
   width: 48%;
 }
@@ -2475,4 +2478,30 @@ section {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
+}
+
+/**
+* Cookie Consent Section
+*/
+#cb-cookie-banner {
+  background-color: var(--sec-color);
+  color: var(--bg-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  border-radius: 0;
+  display: none;
+}
+
+#cb-cookie-banner a {
+  color: var(--bg-color);
+}
+
+#cb-cookie-banner .btn {
+  padding: 10px 20px;
+  color: var(--sec-color);
+  background-color: var(--bg-color);
+  border: none;
 }

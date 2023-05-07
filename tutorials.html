@@ -41,12 +41,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="tutorials.html">Tutorials</a></li>
-          <li><a class="nav-link scrollto" href="store.html">Find Stores</a></li>
-          <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
-          <li><a class="nav-link scrollto active" href="blog.html">Blog</a></li>
-          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link active" href="tutorials.html">Tutorials</a></li>
+          <li><a class="nav-link" href="store.html">Find Stores</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link" href="blog.html">Blog</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -68,21 +68,19 @@
     </section>
     <!-- End Breadcrumbs -->
 
+    <div class="promotions bg-white pt-4">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <img src="../assets/img/promotions/p-banner.webp" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
     <!-- ======= Tutorials Section ======= -->
     <section id="tutorials" class="tutorials bg-white">
       <div class="container" data-aos="fade-up">
 
         <div class="tutorials-isotope" data-tutorials-filter="*" data-tutorials-layout="masonry" data-tutorials-sort="original-order" data-aos="fade-up" data-aos-delay="100">
-
-          <div>
-            <ul class="tutorials-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-shopping">Shopping</li>
-              <li data-filter=".filter-styles">Styles</li>
-              <li data-filter=".filter-branding">Branding</li>
-              <li data-filter=".filter-books">Books</li>
-            </ul><!-- End Tutorials Filters -->
-          </div>
 
           <div class="row gy-4 tutorials-container">
 
@@ -129,46 +127,6 @@
                 <a href="assets/img/tutorials/books-2.jpg" data-gallery="tutorials-gallery-app" class="glightbox"><img src="assets/img/tutorials/books-2.jpg" class="img-fluid" alt=""></a>
                 <div class="tutorials-info">
                   <h4><a href="javascript:void" title="More Details">Books 2</a></h4>
-                  <p></p>
-                </div>
-              </div>
-            </div><!-- End Tutorials Item -->
-
-            <div class="col-xl-4 col-md-6 tutorials-item filter-shopping">
-              <div class="tutorials-wrap">
-                <a href="assets/img/tutorials/app-3.jpg" data-gallery="tutorials-gallery-app" class="glightbox"><img src="assets/img/tutorials/app-3.jpg" class="img-fluid" alt=""></a>
-                <div class="tutorials-info">
-                  <h4><a href="javascript:void" title="More Details">App 3</a></h4>
-                  <p></p>
-                </div>
-              </div>
-            </div><!-- End Tutorials Item -->
-
-            <div class="col-xl-4 col-md-6 tutorials-item filter-styles">
-              <div class="tutorials-wrap">
-                <a href="assets/img/tutorials/product-3.jpg" data-gallery="tutorials-gallery-app" class="glightbox"><img src="assets/img/tutorials/product-3.jpg" class="img-fluid" alt=""></a>
-                <div class="tutorials-info">
-                  <h4><a href="javascript:void" title="More Details">Product 3</a></h4>
-                  <p></p>
-                </div>
-              </div>
-            </div><!-- End Tutorials Item -->
-
-            <div class="col-xl-4 col-md-6 tutorials-item filter-branding">
-              <div class="tutorials-wrap">
-                <a href="assets/img/tutorials/branding-3.jpg" data-gallery="tutorials-gallery-app" class="glightbox"><img src="assets/img/tutorials/branding-3.jpg" class="img-fluid" alt=""></a>
-                <div class="tutorials-info">
-                  <h4><a href="javascript:void" title="More Details">Branding 3</a></h4>
-                  <p></p>
-                </div>
-              </div>
-            </div><!-- End Tutorials Item -->
-
-            <div class="col-xl-4 col-md-6 tutorials-item filter-books">
-              <div class="tutorials-wrap">
-                <a href="assets/img/tutorials/books-3.jpg" data-gallery="tutorials-gallery-app" class="glightbox"><img src="assets/img/tutorials/books-3.jpg" class="img-fluid" alt=""></a>
-                <div class="tutorials-info">
-                  <h4><a href="javascript:void" title="More Details">Books 3</a></h4>
                   <p></p>
                 </div>
               </div>
@@ -238,6 +196,16 @@
     </div>
   </footer>
   <!-- End Footer -->
+
+    <!-- Cookie Banner -->
+    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+      &#x1F36A; This website uses cookies to ensure you get the best experience on our website.
+      <a href="./privacy-policy.html" target="blank">Learn more</a>
+      <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+        I Got It
+      </button>
+    </div>
+    <!-- End of Cookie Banner -->
 
   <a href="javascript:void" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
