@@ -1660,6 +1660,12 @@ section {
   width: 48%;
 }
 
+@media (max-width: 768px) {
+  .blog .entry.entry-flex {
+    width: 96%;
+  }
+}
+
 .blog .entry .entry-img {
   max-height: 440px;
   margin: -30px -30px 20px -30px;
