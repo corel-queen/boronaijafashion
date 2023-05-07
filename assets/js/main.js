@@ -60,10 +60,10 @@
   * @description Checks the localstorage and shows Cookie banner based on it.
   */
   function initializeCookieBanner(){
-    let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
+    let isCookieAccepted = sessionStorage.getItem("cb_isCookieAccepted");
     if(isCookieAccepted === null)
     {
-        localStorage.setItem("cb_isCookieAccepted", "no");
+        sessionStorage.setItem("cb_isCookieAccepted", "no");
         showCookieBanner();
     }
     if(isCookieAccepted === "no"){
