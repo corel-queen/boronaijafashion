@@ -50,7 +50,7 @@
   * @description Hides the Cookie banner and saves the value to localstorage
   */
   function hideCookieBanner(){
-    localStorage.setItem("cb_isCookieAccepted", "yes");
+    sessionStorage.setItem("cb_isCookieAccepted", "yes");
 
     let cookieBanner = document.getElementById("cb-cookie-banner");
     cookieBanner.style.display = "none";
@@ -65,8 +65,8 @@
     {
         sessionStorage.setItem("cb_isCookieAccepted", "no");
         showCookieBanner();
-    }
-    if(isCookieAccepted === "no"){
+      }
+      if(isCookieAccepted === "no"){
         showCookieBanner();
     }
   }
