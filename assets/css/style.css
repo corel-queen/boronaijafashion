@@ -3,12 +3,17 @@
 --------------------------------------------------------------*/
 :root {
   --pry-color: #49b5e7;
-  --sec-color: #0f394c;
+  --sec-color: #062e25;
+  --tet-color: #062e25;
   --alt-color: #009900;
   --bg-color: #f9f9f9;
   --text-color: #444444;
   --link-color: #000000;
+  --light-bg-color: #ebfcf1;
+
+  --opacity: 0.8;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--text-color);
@@ -45,7 +50,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: var(--pry-color);
+  background: var(--alt-color);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -328,80 +333,6 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
-  background: #f9f9f9;
-}
-
-#hero .container {
-  padding-top: 84px;
-}
-
-#hero h1 {
-  margin: 0;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #0f394c;
-  text-transform: uppercase;
-}
-
-#hero h2 {
-  color: #1c698c;
-  margin: 10px 0 0 0;
-  font-size: 20px;
-}
-
-#hero .btn-get-started {
-  font-family: "Dosis", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 3px;
-  transition: 0.5s;
-  margin-top: 25px;
-  color: #fff;
-  background: #49b5e7;
-  text-transform: uppercase;
-}
-
-#hero .btn-get-started:hover {
-  background: #76c7ed;
-}
-
-@media (max-width: 991px) {
-  #hero {
-    height: 100vh;
-    text-align: center;
-  }
-
-  #hero .hero-img img {
-    width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  #hero .hero-img img {
-    width: 80%;
-  }
-}
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  width: 100%;
   height: 100vh;
   background-color: rgba(63, 73, 83, 0.8);
   overflow: hidden;
@@ -522,13 +453,12 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #d9232d;
+  background: var(--alt-color);
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 14px 32px;
@@ -537,11 +467,14 @@ h6 {
   line-height: 1;
   color: #fff;
   animation-delay: 0.8s;
-  background: #d9232d;
+  background: var(--alt-color);
+  font-family: "Dosis", sans-serif;
 }
 
 #hero .btn-get-started:hover {
-  background: #df3740;
+  background: var(--sec-color);
+  /* opacity: var(--opacity); */
+  color: var(--bg-color);
 }
 
 @media (max-width: 992px) {
@@ -1320,6 +1253,11 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background: #fff;
+  margin-top: 90px;
+}
+
 .contact .info {
   width: 100%;
   background: #fff;
@@ -1327,7 +1265,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #49b5e7;
+  color: var(--alt-color);
   float: left;
   width: 44px;
   height: 44px;
@@ -1344,14 +1282,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #0f394c;
+  color: var(--sec-color);
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #2079a1;
+  color: var(--sec-color);
 }
 
 .contact .info .email,
@@ -1362,7 +1300,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #49b5e7;
+  background: var(--alt-color);
   color: #fff;
 }
 
@@ -1433,7 +1371,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #49b5e7;
+  background: var(--alt-color);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1442,7 +1380,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #1da2e0;
+  background: var(--sec-color);
 }
 
 @keyframes animate-loading {
@@ -1514,16 +1452,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
   padding: 0 0 30px 0;
   color: #444444;
   font-size: 14px;
-  background: #ebf7fc;
+  background: var(--light-bg-color);
 }
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #f0f9fd;
+  background: var(--light-bg-color);
   text-align: center;
   font-size: 15px;
 }
@@ -1534,7 +1471,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #0f394c;
+  color: var(--sec-color);
 }
 
 #footer .footer-newsletter form {
@@ -1562,7 +1499,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #49b5e7;
+  background: var(--alt-color);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1570,7 +1507,9 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #1da2e0;
+  background: var(--sec-color);
+  /* opacity: var(--opacity); */
+  color: var(--bg-color);
 }
 
 #footer .footer-top {
@@ -1601,7 +1540,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #0f394c;
+  color: var(--sec-color);
   position: relative;
   padding-bottom: 12px;
 }
@@ -1618,7 +1557,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #49b5e7;
+  color: var(--alt-color);
   font-size: 18px;
   line-height: 1;
 }
@@ -1642,13 +1581,13 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #49b5e7;
+  color: var(--alt-color);
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #49b5e7;
+  background: var(--alt-color);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1661,20 +1600,20 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #1da2e0;
+  background: var(--sec-color);
   color: #fff;
   text-decoration: none;
 }
 
 #footer .copyright {
   float: left;
-  color: #0f394c;
+  color: var(--sec-color);
 }
 
 #footer .credits {
   float: right;
   font-size: 13px;
-  color: #0f394c;
+  color: var(--sec-color);
 }
 
 @media (max-width: 575px) {
