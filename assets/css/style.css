@@ -2527,3 +2527,21 @@ section {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
+
+/** Custom Button */
+.btn-custom {
+  background-color: var(--sec-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s ease-in-out;
+  padding: 11px 32px;
+  font-family: Dosis, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  background-color: var(--alt-color);
+  color: var(--bg-color);
+}
