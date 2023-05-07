@@ -134,6 +134,43 @@
     });
 
   /**
+    * Tutorials isotope and filter
+    */
+    let tutorialsnIsotope = document.querySelector('.tutorials-isotope');
+
+    if (tutorialsnIsotope) {
+
+    let tutorialsFilter = tutorialsnIsotope.getAttribute('data-tutorials-filter') ? tutorialsnIsotope.getAttribute('data-tutorials-filter') : '*';
+    let tutorialsLayout = tutorialsnIsotope.getAttribute('data-tutorials-layout') ? tutorialsnIsotope.getAttribute('data-tutorials-layout') : 'masonry';
+    let tutorialsSort = tutorialsnIsotope.getAttribute('data-tutorials-sort') ? tutorialsnIsotope.getAttribute('data-tutorials-sort') : 'original-order';
+
+    window.addEventListener('load', () => {
+      let tutorialsIsotope = new Isotope(document.querySelector('.tutorials-container'), {
+        itemSelector: '.tutorials-item',
+        layoutMode: tutorialsLayout,
+        filter: tutorialsFilter,
+        sortBy: tutorialsSort
+      });
+
+      let menuFilters = document.querySelectorAll('.tutorials-isotope .tutorials-flters li');
+      menuFilters.forEach(function(el) {
+        el.addEventListener('click', function() {
+          document.querySelector('.tutorials-isotope .tutorials-flters .filter-active').classList.remove('filter-active');
+          this.classList.add('filter-active');
+          tutorialsIsotope.arrange({
+            filter: this.getAttribute('data-filter')
+          });
+          if (typeof aos_init === 'function') {
+            aos_init();
+          }
+        }, false);
+      });
+
+    });
+
+    }
+
+  /**
    * Scroll with ofset on page load with hash links in the url
    */
   window.addEventListener('load', () => {
