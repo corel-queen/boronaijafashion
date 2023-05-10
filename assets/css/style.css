@@ -1056,7 +1056,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/cta-bg.jpg") no-repeat;
+  background: url("../img/testimonials/testimonials-bg.jpeg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1144,7 +1144,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #49b5e7;
+  background-color: var(--alt-color);
 }
 
 @media (min-width: 992px) {
