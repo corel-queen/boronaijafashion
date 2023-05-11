@@ -2499,6 +2499,7 @@ section {
   z-index: 999;
   border-radius: 0;
   display: none;
+  border: none;
 }
 
 #cb-cookie-banner a {
